@@ -1,0 +1,12 @@
+****variable convention:
+1.Any lenghth
+2.Dont start with digit
+3.Can have underscore at any position
+4.Lowercase with underscore
+****file convention:
+1.Lowercase with underscore
+2..py extension
+****function convention
+1.def keyword followed by function name
+2.lowercase with underscore
+
