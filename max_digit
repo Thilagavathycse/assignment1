@@ -1,3 +1,3 @@
 num=input("enter a number:")
 sorting_num=sorted(num,reverse=True)
-print(*sortng_num,sep="")
+print(*sorting_num,sep="")
