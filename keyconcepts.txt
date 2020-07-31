@@ -1,0 +1,61 @@
+1.PRIMARY KEY SYNTAX
+
+CREATE TABLE Students (
+    StudentID int NOT NULL  ,
+    StudentName varchar(255) NOT NULL,
+    Marks int,
+    PRIMARY KEY (StudentID)
+);
+
+2.ALTER TABLE
+ALTER TABLE Persons
+ADD PRIMARY KEY (ID);
+DROP A PRIMAY KEY
+
+ALTER TABLE Students
+DROP CONSTRAINT StudentID;
+3.CHANGE THE PRIMARY KEY AFTER CREATING THE TABLE
+
+ALTER TABLE Students
+ ADD PRIMARY KEY (StudentName);
+
+
+************************************************************
+1.FOREIGN KEY
+
+CREATE TABLE Departments (
+    DepartmentID int NOT NULL,
+    DepartmentName varchar(255) NOT NULL,
+    DepartmentSubjects varchar(255),
+    PRIMARY KEY (DepartmentID),
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
+);
+2.FREIGN KEY IN ALTER TABLE
+
+ALTER TABLE Departments
+ADD FOREIGN KEY (StudentID) REFERENCES Departments(StudentID);
+
+*************************************************************
+composite key
+CREATE TABLE student
+(Student_ID int NOT NULL,
+Student_name varchar(255) NOT NULL,
+City varchar(255),
+Marks int
+CONSTRAINT CompKey_ID_NAME PRIMARY KEY (Student_ID, Student_name));
+
+ALTER table table_name
+ADD CONSTRAINT Constraint_name PRIMARY KEY (column_name1, column_name2);
+ 
+foreign key
+CREATE TABLE Orders (
+    OrderID int NOT NULL,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    PRIMARY KEY (OrderID),
+    FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+);
+alter table
+ALTER TABLE Orders
+ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+FOREIGN KEY (pk_studentID ) REFERENCES student(pk_studentID ),
