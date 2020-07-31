@@ -1,0 +1,16 @@
+create table  Vehicles(
+	type_id int NOT NULL PRIMARY KEY,
+	type_name text NOT NULL,
+	max_limit_peple int NOT NULL,
+	minimum_range int NOT NULL,
+	maximum_range int NOT NULL,
+	price_per_km_with_Ac int,
+	price_per_km_without_AC int);
+	insert into Vehicles
+	values('1','auto','3','0','15','10');
+	insert into Vehicles values('2','auto','3','15','30','8');
+	insert into Vehicles values('3','auto','3','30','2000','15');
+	insert into Vehicles values('4','micro','4','5','15','10','14');
+	insert into Vehicles values('5','micro','4','15','2000','10','12');
+	insert into Vehicles values('6','xl','10','0','15','14','15');
+	insert into Vehicles values('7','xl','10','15','2000','14','15');
