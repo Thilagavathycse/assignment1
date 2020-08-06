@@ -1,0 +1,10 @@
+[
+  {
+    "book_id": 1, 
+    "book_name": "java"
+  }, 
+  {
+    "book_id": 2, 
+    "book_name": "python"
+  }
+]
